@@ -59,7 +59,7 @@ a {
     position: relative;
     margin-top: 25px;
   }
-  .banner-description{
+.description{
 width: 670px;
 color: #FFF;
 text-align: center;
@@ -77,3 +77,76 @@ font-weight: 400;
     z-index: 1;
     border-radius: 10px;
   }
+
+  .Banner .search {
+    width: 70%;
+    height: 55px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    position: relative;
+    z-index: 5;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .search input,
+  select,
+  button {
+    width: 160px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+  }
+  .search button {
+    color: #fff;
+    background-color: #ff5400;
+  }
+
+
+
+
+  .popular-tour{
+    display: flex;
+    justify-content: space-between;
+  }
+  .read-more {
+    width: 50%;
+  }
+  .read-more button {
+    width: 170px;
+    height: 50px;
+    background-color: #ff5400;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 35px;
+  }
+  .read-more h1 {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .our li {
+    margin-left: 30px;
+  }
+  .our {
+    width: 700px;
+    margin-top: 30px;
+  }
+  .explore-more {
+    color: #5a5a5d;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  .popular-tour.popular-img img {
+    height: 100%;
+    width: 100%;
+    display: flex;
+  }
+  
