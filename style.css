@@ -1,6 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900;1000&display=swap');
-font-family: 'Mulish', sans-serif;
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Mulish', sans-serif;
 }
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.travel , #home{
+   color: #FF5400;
+}
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.nav-bar {
+    margin-right: 15px; 
+}
+
+a {
+    text-decoration: none;
+    color: var(--Dark-02);
+    font-size: 12px;
+}
+.Banner {
+    width: 1170px;
+    height: 500px;
+    background-image: url("./Images/Group\ 13.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 50px 130px;
+    border-radius: 15px;
+    position: relative;
+  }
+  .Banner h1 {
+    color: white;
+    font-size: 65px;
+    font-weight: 700;
+    z-index: 5;
+    position: relative;
+    text-align: center;
+  }
+  .Banner-text{
+    width: 670px;
+    margin: 20px auto;
+    padding-top: 130px;
+  }
+  .Banner p {
+    text-align: center;
+    z-index: 5;
+    position: relative;
+    margin-top: 25px;
+  }
+  .banner-description{
+width: 670px;
+color: #FFF;
+text-align: center;
+font-size: 16px;
+font-weight: 400;
+  }
+  .Banner::after {
+    content: " ";
+    width: 1170px;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+    z-index: 1;
+    border-radius: 10px;
+  }
