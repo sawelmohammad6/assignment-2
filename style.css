@@ -174,7 +174,7 @@ font-weight: 400;
 #img7{
     grid-area: b7;
 } 
-.country .box {
+.country .country-img {
   position: relative;
 }
 .country-img img{
@@ -366,4 +366,86 @@ background-color: rgba(19, 19, 24, 0.05);;
 .icons{
   font-size: 36px;
   padding: 10px;
+}
+
+
+@media screen and (max-width: 576px){
+
+  .country{
+    margin-top: 10px;
+   display: grid;
+    grid-template-areas: 
+    
+    "b1"
+    "b2"
+    "b3"
+    "b4"
+    "b5"
+    "b6"
+    "b7";
+}
+.country-img img{
+  width: 95%;
+}
+.discover{
+  width: 95%;
+  margin: 30px auto;
+}
+header {
+  width: 90%;
+  margin: 15px auto;
+}
+.nav-bar {
+  display: none;
+}
+.home {
+  display: block;
+  font-size: 30px;
+}
+.Banner {
+  margin: 0;
+  width: 100%;
+}
+.Banner h1 {
+  font-size: 35px;
+}
+.Banner::after {
+  width: 100%;
+}
+.Banner-text {
+  width: 90%;
+  padding-top: 30px;
+}
+.Banner .search {
+  width: 90%;
+  height: 55%;
+  padding: 10px;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.search input,
+select,
+button {
+  margin-top: 20px;
+  width: 80%;
+}
+.popular-tour {
+  flex-direction: column;
+}
+.kk {
+  display: none;
+}
+.our {
+  width: 385px;
+}
+.poplular-img {
+  margin-top: 30px;
+  width: 100%;
+}
+main {
+  width: 90%;
+  margin: 15px auto;
+}
+.read-more h1 {
+  font-size: 20px;
 }
