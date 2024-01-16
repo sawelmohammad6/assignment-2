@@ -1,35 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900;1000&display=swap');
 
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
     font-family: 'Mulish', sans-serif;
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
 }
 
 .travel , #home{
    color: #FF5400;
 }
-ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+.description {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
 }
-.nav-bar {
-    margin-right: 15px; 
+header {
+  width: 1440px;
+  margin: 52px auto;
+}
+main {
+  width: 1440px;
+  margin: 52px auto;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav h1 {
+  color: #131318;
+  font-size: 36px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.nav {
+  display: none;
+}
+#home{
+  color: orangered;
+}
+nav ul {
+  display: flex;
+}
+nav li {
+  list-style: none;
+  margin-right: 35px;
+}
+nav a {
+  text-decoration: none;
 }
 
-a {
-    text-decoration: none;
-    color: var(--Dark-02);
-    font-size: 12px;
-}
 .Banner {
     width: 1170px;
     height: 500px;
@@ -59,13 +81,7 @@ a {
     position: relative;
     margin-top: 25px;
   }
-.description{
-width: 670px;
-color: #FFF;
-text-align: center;
-font-size: 16px;
-font-weight: 400;
-  }
+  
   .Banner::after {
     content: " ";
     width: 1170px;
@@ -139,9 +155,9 @@ font-weight: 400;
   }
   .explore-more {
     color: #5a5a5d;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 25px;
+    line-height: 26px;
   }
   .popular-tour .popular-img img {
     height: 100%;
@@ -276,7 +292,36 @@ font-weight: 400;
   font-weight: 400;
   line-height: 25px;
 }
+.simple{
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+height: 424px;
+}
 
+.simple-l{
+
+  width: 625px;
+  padding: 40px;
+}
+.simple-l p{
+  margin-top: 35px;
+}
+.simple-l ul{
+  margin-top: 28px;
+}
+
+.simple-l button{
+  width: 174px;
+height: 52px;
+background-color: #ff5400;
+color: white;
+font-size: 16px;
+font-weight: 400;
+margin-top: 35px;
+border: none;
+border-radius: 8px;
+}
 
 .newsletter-div {
   display: flex;
@@ -369,8 +414,13 @@ background-color: rgba(19, 19, 24, 0.05);;
 }
 
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 600px){
 
+  nav li {
+    list-style: none;
+    margin-right: 0px;
+  }
+  
   .country{
     margin-top: 10px;
    display: grid;
@@ -393,7 +443,19 @@ background-color: rgba(19, 19, 24, 0.05);;
 }
 header {
   width: 90%;
-  margin: 15px auto;
+  margin: 15px auto;}
+  .simple{
+    flex-direction: column;
+    width: 100%;
+    margin-top: 280px;
+  }
+  iframe{
+    width: 95%;
+    margin-top: 20px;
+  }
+  .simple-l {
+    width: 95%;
+    padding: 0px;
 }
 .nav-bar {
   display: none;
@@ -432,9 +494,7 @@ button {
 .popular-tour {
   flex-direction: column;
 }
-.kk {
-  display: none;
-}
+
 .our {
   width: 385px;
 }
@@ -448,4 +508,71 @@ main {
 }
 .read-more h1 {
   font-size: 20px;
+}
+.mini {
+  flex-direction: column;
+}
+.mini1,
+.mini2,
+.mini3 {
+  width: 100%;
+}
+.choose-us {
+  width: 100%;
+}
+.mini2 {
+  margin-top: 44px;
+}
+.mini3 {
+  margin-top: 44px;
+}
+
+
+.newsletter-div {
+  flex-direction: column;
+  margin-top: 220px;
+}
+.newsletter {
+  width: 100%;
+}
+.newsletter-next{
+  width: 100%;
+}
+.enter-in input {
+  width: 100%;
+}
+.enter-in button {
+  width: 100%;
+}
+.another-img {
+  width: 100%;
+  height: 250px;
+  margin-top: 15px;
+}
+.another-img img {
+  width: 100%;
+}
+.label {
+  width: 170px;
+  height: 70px;
+  right: 8%;
+  top: 50%;
+}
+
+.label h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+}
+.label h6 {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 400;
+}
+.foot-sec{
+  width: 80%;
+}
+.explore-more{
+  max-width: 80%;
+}
 }
